@@ -199,15 +199,20 @@ p {
     padding: 0.3rem;
     font-size: 1.2rem;
     border-radius: 0.5rem;
-    margin: 0.3rem;
+    margin: 0.4rem;
     font-weight: normal;
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
+    position: relative;
 }
-.my-pill:hover {
-    background: rgba(220, 220, 220, 30%);
-    box-shadow: 2px 2px 2px var(--main-shadow-color);
+.my-pill:after {
+    content: "";
+    position: absolute;
+    height: 2rem;
+    width: 2px;
+    right: -0.4rem;
+    background: var(--primary-color);
 }
 .my-pill img {
     height: 2rem;
