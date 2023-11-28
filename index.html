@@ -38,6 +38,7 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Арсений Кузнецов</title>
 </head>
 <body>
@@ -135,7 +136,7 @@
         C, Kotlin, Python. Но не ограничен ими.
     </p>
 </section>
-<section class="main container" id="skills">
+<section class="main container" data-aos="fade-right" id="skills">
     <h2 class="section-header">Навыки</h2>
     <ul class="list-group list-group-flush">
         <li class="skill list-group-item">
@@ -177,7 +178,7 @@
         </li>
     </ul>
 </section>
-<section class="main container" id="projects">
+<section class="main container" data-aos="fade-up" id="projects">
     <h2 class="section-header">Проекты</h2>
     <div class="cards d-flex flex-wrap justify-content-center">
         <div class="col-12 col-md-6 col-lg-4">
@@ -231,6 +232,10 @@
     <p>© Copyright Kuarni 2023 | All rights reserved</p>
     <p>Сделанно с помощью <a href="https://github.com/twbs/bootstrap">Bootstrap</a></p>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
