@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <title>Арсений Кузнецов</title>
+</head>
+<body>
+<header class="navbar navbar-expand bg-white sticky-top">
+    <div class="container-fluid grid" role="heading">
+        <a class="navbar-brand col-3" href="#">Аrseniy Kuznetsov</a>
+        <ul class="navbar-nav col d-none d-md-flex justify-content-center">
+            <li class="nav-item">
+                <div class="border-before"></div>
+                <a class="nav-link" href="#about-me">Обо мне</a>
+                <div class="border-after"></div>
+            </li>
+            <li class="nav-item">
+                <div class="border-before"></div>
+                <a class="nav-link" href="#skills">Навыки</a>
+                <div class="border-after"></div>
+            </li>
+            <li class="nav-item">
+                <div class="border-before"></div>
+                <a class="nav-link" href="#projects">Проекты</a>
+                <div class="border-after"></div>
+            </li>
+        </ul>
+        <div class="dropdown col-3 d-flex justify-content-end">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="chooseLang"
+                    data-bs-toggle="dropdown">
+                RU
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html">EN</a></li>
+                <li><a class="dropdown-item active" href="index-ru.html">RU</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="main container" id="about-me">
+    <h2 class="section-header">Обо мне</h2>
+    <section class="d-flex flex-wrap-reverse justify-content-between">
+        <img class="block my-photo col-sm-12 col-md-5" src="static/img/IMG_20230705_140515.jpg">
+        <div class="block col-sm-12 col-md-6">
+            <h4 class="text-center text-md-start">Кузнецов Арсений Николаевич</h4>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span><b>Возраст: </b>19 лет</span></li>
+                <li class="list-group-item"><span><b>Образование: </b>Студент Программной Инженерии СПбГУ</span></li>
+                <li class="list-group-item"><span><b>Местоположение: </b>Санкт-Петербург, Россия</span></li>
+                <li class="list-group-item"><span><b>Специализация: </b>Software engineer</span></li>
+                <li class="list-group-item"><span><b>Зарплатные ожидания: </b>от <i>&euro;7000</i>, но пока можно и за еду</span>
+                </li>
+                <li class="list-group-item">
+                    <span>
+                        <b>Почта: </b>
+                        <a class="primary-link" type="button" data-bs-container="body"
+                           data-bs-toggle="popover" data-bs-placement="bottom"
+                           data-bs-content="копировать" data-bs-trigger="hover"
+                           data-bs-custom-class="my-btn-small-popover"
+                           data-clipboard-text="kuarni22@gmail.com">kuarni22@gmail.com
+                        </a>
+                    </span>
+                    <div class="buttons">
+                        <a class="btn btn-outline-secondary my-btn-small" type="button" data-bs-container="body"
+                           data-bs-toggle="popover" data-bs-placement="bottom"
+                           data-bs-content="написать" data-bs-trigger="hover"
+                           data-bs-custom-class="my-btn-small-popover"
+                           href="mailto:kuarni22@gmail.com?subject=предложение о сотрудничестве">
+                            <i class="bx bx-xs bxl-gmail"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="links">
+                        <a class="bx bx-sm bxl-telegram" href="https://t.me/Kuarni_KY"></a>
+                        <a class="bx bx-sm bxl-github" href="https://github.com/Kuarni"></a>
+                    </div>
+                </li>
+            </ul>
+            <p class="d-lg-flex d-none">
+                Начал увлекаться программированием еще в школе, тогда выбор пал на Python. После поступления в СПбГУ
+                изучал и работал на таких языках, как C, Kotlin, OCaml. Где приходилось создвать сложные программные
+                продукты, а также расширять функциональность уже имеющих продуктов системного программирования.
+            </p>
+        </div>
+    </section>
+    <p class="big-p d-lg-none">
+        Начал увлекаться программированием еще в школе, тогда выбор пал на Python. После поступления в СПбГУ
+        изучал и работал на таких языках, как C, Kotlin, OCaml. Где приходилось создвать сложные программные
+        продукты, а также расширять функциональность уже имеющих продуктов системного программирования.
+    </p>
+</section>
+<section class="main container" id="skills">
+    <h2 class="section-header">Навыки</h2>
+    <ul class="list-group list-group-flush">
+        <li class="skill list-group-item">
+            <h4>Языки</h4>
+            <div class="d-flex flex-wrap justify-content-start">
+                <span class="my-pill"><img src="static/svg/c-svgrepo-com.svg"><span>С</span></span>
+                <span class="my-pill"><img src="static/svg/python-svgrepo-com.svg"><span>Python</span></span>
+                <span class="my-pill"><img src="static/svg/kotlin-svgrepo-com.svg"><span>Kotlin</span></span>
+                <span class="my-pill"><img src="static/svg/ocaml-svgrepo-com.svg"><span>OCaml</span></span>
+                <span class="my-pill"><img src="static/svg/javascript-svgrepo-com.svg"><span>Javascript</span></span>
+            </div>
+        </li>
+        <li class="skill list-group-item">
+            <h4>Базы данных</h4>
+            <div class="d-flex flex-wrap justify-content-start">
+                <span class="my-pill"><img src="static/svg/sqlite-svgrepo-com.svg"><span>SQlite</span></span>
+                <span class="my-pill"><span>Neo4j</span></span>
+            </div>
+        </li>
+        <li class="skill list-group-item">
+            <h4>Системы сборки</h4>
+            <div class="d-flex flex-wrap justify-content-start">
+                <span class="my-pill"><img src="static/svg/makefile-svgrepo-com.svg"><span>make</span></span>
+                <span class="my-pill"><img src="static/svg/cmake-svgrepo-com.svg"><span>cmake</span></span>
+                <span class="my-pill"><img src="static/svg/gradle-svgrepo-com.svg"><span>gradle</span></span>
+                <span class="my-pill"><span>dune</span></span>
+            </div>
+        </li>
+        <li class="skill list-group-item">
+            <h4>Другое</h4>
+            <div class="d-flex flex-wrap justify-content-start">
+                <span class="my-pill"><img src="static/svg/git-svgrepo-com.svg"><span>git</span></span>
+                <span class="my-pill"><img src="static/svg/html-5-svgrepo-com.svg"><span>HTML</span></span>
+                <span class="my-pill"><img src="static/svg/css-3-svgrepo-com.svg"><span>CSS</span></span>
+                <span class="my-pill"><img src="static/svg/bootstrap-svgrepo-com.svg"><span>Bootstrap</span></span>
+                <span class="my-pill"><span>Compose</span></span>
+                <span class="my-pill"><img src="static/svg/bash-icon-svgrepo-com.svg"><span>bash</span></span>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="main container" id="projects">
+    <h2 class="section-header">Проекты</h2>
+    <div class="cards d-flex flex-wrap justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2>Trees</h2><img src="static/img/trees.png">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Образовательный проект по бинарным деревьям на Kotlin. Позволяет создавать 3 вида бинарных
+                        деревьев
+                        и производить с ними различные манипуляции. Программа имеет gui и может сохранять деревья в
+                        различные базы данных.
+                    </p>
+                </div>
+            </div>
+        </div><div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h2>SPDK RAID add</h2><img src="static/svg/spdk.svg">
+            </div>
+            <div class="card-body">
+                <p class="card-text">
+                    <b>WIP</b><br>
+                    Добавление дисков в degraded RAID-массивы в Intel's SPDK (Storage Performance Development Kit)
+                </p>
+            </div>
+        </div>
+    </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h2>SPDK RAID metadata</h2><img src="static/svg/spdk.svg">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        <b>WIP</b><br>
+                        Добавление метаданных для RAID-массивов Intel's SPDK (Storage Performance Development Kit)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Сделанно с помощью <a href="https://github.com/twbs/bootstrap">Bootstrap</a></p>
+</footer>
+</body>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+</html>
