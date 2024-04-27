@@ -6,22 +6,28 @@
     --bs-primary: var(--primary-color);
     --bs-secondary: var(--secondary-color);
 }
+
 p {
     font-size: large;
 }
+
 .primary-link {
     text-decoration: none;
     color: dimgrey;
 }
+
 .primary-link:hover {
     color: darkgrey;
 }
+
 .dropdown-item {
     width: 100%;
 }
+
 .dropdown-item.active {
     --bs-dropdown-link-active-bg: var(--primary-color);
 }
+
 .dropdown-item:hover {
     --bs-dropdown-link-hover-bg: var(--secondary-color);
 }
@@ -32,14 +38,17 @@ p {
     margin: 0 0.75rem;
     position: relative;
 }
+
 .nav-item > a {
     font-size: large;
     color: dimgrey;
     transition: all 0.1s ease-out;
 }
+
 .nav-item:hover > a {
     color: black;
 }
+
 .nav-item > .border-before:after {
     content: "";
     background-color: var(--primary-color);
@@ -50,11 +59,13 @@ p {
     width: 0;
     transition: width 0.6s ease-in-out;
 }
+
 .nav-item:hover > .border-before:after {
     height: 2px;
     width: 40%;
     border-radius: 10px;
 }
+
 .nav-item > .border-before:before {
     content: "";
     background-color: var(--primary-color);
@@ -65,11 +76,13 @@ p {
     width: 0;
     transition: height 0.6s ease-in-out;
 }
+
 .nav-item:hover > .border-before:before {
     height: 30%;
     width: 2px;
     border-radius: 10px;
 }
+
 .nav-item > .border-after:after {
     content: "";
     background-color: var(--primary-color);
@@ -80,12 +93,14 @@ p {
     width: 0;
     transition: width 0.6s ease-in-out, box-shadow 0.5s linear 0.5s;
 }
+
 .nav-item:hover > .border-after:after {
     height: 2px;
     width: 55%;
     border-radius: 10px;
     box-shadow: -2px 2px 2px var(--main-shadow-color);
 }
+
 .nav-item > .border-after:before {
     content: "";
     background-color: var(--primary-color);
@@ -96,12 +111,14 @@ p {
     width: 0;
     transition: height 0.8s ease-in-out, box-shadow 0.5s linear 0.5s;
 }
+
 .nav-item:hover > .border-after:before {
     height: 40%;
     width: 2px;
     border-radius: 10px;
     box-shadow: -2px 2px 2px var(--main-shadow-color);
 }
+
 .navbar {
     box-shadow: 0 4px 4px var(--main-shadow-color);
 }
@@ -111,11 +128,13 @@ p {
 .main {
     padding: 1rem 0.75rem;
 }
+
 .section-header {
     margin: 1rem;
     position: relative;
     text-align: center;
 }
+
 .section-header:after {
     --width: 10%;
     content: "";
@@ -129,38 +148,47 @@ p {
     width: var(--width);
     transition: all 1s ease-in-out;
 }
+
 .section-header:hover:after {
     --width: 25%;
 }
+
 .main .block {
     margin: 1rem 0;
 }
+
 .my-photo {
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid var(--primary-color);
     transition: box-shadow 0.4s ease-out 0.3s, transform 0.4s ease-out;
 }
+
 .my-photo:hover {
     box-shadow: 4px 4px 4px var(--main-shadow-color);
     transform: scale(1.05);
 }
+
 .list-group-item {
     display: flex;
     justify-content: space-between;
 }
+
 .my-btn-small {
     margin-top: -1px;
     padding: 0.1rem 0.4rem;
     border-color: var(--secondary-color);
 }
+
 .links > a {
     color: black;
     text-decoration: none;
 }
+
 .links > a:hover {
     color: darkgrey;
 }
+
 .my-btn-small-popover {
     --bs-popover-max-width: 200px;
     --bs-popover-border-color: var(--primary-color);
@@ -169,18 +197,23 @@ p {
     --bs-popover-arrow-width: 0.7rem;
     --bs-popover-arrow-height: 0.4rem;
 }
+
 .big-p {
     margin: 3rem 1rem;
     text-align: center;
     font-style: italic;
 }
+
 .skill {
     display: block;
     transition: all 0.5s ease-in-out;
 }
+
 .skill > h4 {
     position: relative;
+    font-weight: 600;
 }
+
 .skill > h4:before {
     content: "";
     background-color: var(--primary-color);
@@ -189,52 +222,56 @@ p {
     left: -4px;
     height: 2px;
     width: 8rem;
-    transition: all 1s ease-in-out;
+    transition: all 1.5s ease-in-out;
 }
+
 .skill:hover > h4:before {
-    width: 14rem;
+    width: 10rem;
 }
 
 .my-pill {
     padding: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    border: 1px solid var(--secondary-color);
     border-radius: 0.5rem;
     margin: 0.4rem;
-    font-weight: normal;
+    font-weight: 500;
     transition: all 0.2s ease-in-out;
     display: flex;
     align-items: center;
     position: relative;
 }
-.my-pill:after {
-    content: "";
-    position: absolute;
-    height: 2rem;
-    width: 2px;
-    right: -0.4rem;
-    background: var(--primary-color);
+
+.my-pill span {
+    margin-left: 0.5rem;
 }
+
 .my-pill img {
-    height: 2rem;
-    margin-right: 0.3rem;
+    height: 3rem;
 }
+
 .cards > div {
     padding: 0.3rem;
 }
+
 .card {
     height: 100%;
     transition: all 0.3s ease-in-out;
 }
+
 .card:hover {
     background: rgba(200, 200, 200, 20%);
     box-shadow: 3px 3px 3px var(--main-shadow-color);
 }
+
 .card-header {
     height: 6rem;
 }
+
 .card-header img {
     height: 3rem;
 }
+
 .card-header h2 {
     margin-top: 0.4rem;
 }
@@ -248,14 +285,17 @@ footer {
     text-align: center;
     font-size: small;
 }
+
 footer > p {
     font-size: inherit;
     margin: 0.3rem;
 }
+
 footer a {
     color: inherit;
     text-decoration: none;
 }
+
 footer a:hover {
     color: black;
 }
